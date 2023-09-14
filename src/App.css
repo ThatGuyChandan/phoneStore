@@ -482,6 +482,10 @@
     color: purple;
   }
 }
+.payBtn {
+  background-color: rgb(184, 184, 10);
+  border-radius: 5px;
+}
 /* empty cart */
 .emptyCOntainer {
   text-align: center;

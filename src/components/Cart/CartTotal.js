@@ -29,11 +29,12 @@ export default function CartTotal({ value, history }) {
               <span>Total:</span>
               <strong>${cartTotal}</strong>
             </h5>
-            <PayPalButton
+            {/* <PayPalButton
               total={cartTotal}
               clearCart={clearCart}
               history={history}
-            />
+            /> */}
+            <button className="payBtn"> Pay Button</button>
           </div>
         </div>
       </div>
