@@ -457,6 +457,39 @@
   }
   .row4 {
     font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .yz {
+    font-size: 0.8rem;
+    margin-right: -0.2%;
+  }
+  .xy {
+    padding: 2% 0%;
+  }
+  .xy img {
+    height: 60px;
+  }
+  .head2 h1 {
+    font-size: 2.5rem;
+  }
+  .totalBox {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2% 2%;
+  }
+  .cBtn {
+    margin: 1% 1%;
+    color: purple;
+  }
+  .cartInfo .btn3 {
+    font-size: 1rem;
+    padding: 1% 1%;
+    margin: 1% 2%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .row4 {
+    font-weight: 700;
     font-size: 1.5rem;
   }
   .yz {
@@ -472,19 +505,17 @@
   .head2 h1 {
     font-size: 2.5rem;
   }
-  .totalBox {
-    text-align: center;
+
+  .cartInfo .btn3 {
     font-size: 1.5rem;
-    margin: 2% 2%;
-  }
-  .cBtn {
-    margin: 1% 1%;
-    color: purple;
+    padding: 0% 1%;
+    margin: 1% 1.6%;
   }
 }
 .payBtn {
   background-color: rgb(184, 184, 10);
   border-radius: 5px;
+  cursor: pointer;
 }
 /* empty cart */
 .emptyCOntainer {
