@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PayPalButton from "./PayPalButton";
+// import PayPalButton from "./PayPalButton";
 export default function CartTotal({ value, history }) {
   const { cartSubtotal, cartTax, cartTotal, clearCart } = value;
   return (
@@ -34,7 +34,15 @@ export default function CartTotal({ value, history }) {
               clearCart={clearCart}
               history={history}
             /> */}
-            <button className="payBtn"> Pay Button</button>
+            <button
+              className="payBtn"
+              onClick={() => {
+                alert("Payment in process");
+              }}
+            >
+              {" "}
+              Pay Button
+            </button>
           </div>
         </div>
       </div>

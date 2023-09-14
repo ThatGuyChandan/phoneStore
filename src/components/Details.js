@@ -18,7 +18,7 @@ export default class Details extends Component {
               </div>
               <div className="content">
                 <div className="imgCont">
-                  <img src={img} className="ima" />
+                  <img src={img} className="ima" alt="some" />
                 </div>
                 <div className="detail">
                   <h3>Model:{title}</h3>
