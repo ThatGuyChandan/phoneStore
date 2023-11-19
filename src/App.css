@@ -8,40 +8,34 @@
   justify-content: space-between;
   background-color: blueviolet;
   padding: 2%;
+  border-end-end-radius: 20px;
 }
 .navbar .prod {
   margin-left: 30px;
   align-self: center;
   border-radius: 10px;
   padding: 3px;
+  transition: 0.2s;
 }
-/* .navbar .prod:hover {
-  background-color: aliceblue;
-  border: 0.7px solid purple;
-  color: purple;
-  transition: 0.4s;
-} */
+
 .prod p {
   color: aliceblue;
   font-size: 1.9rem;
   border-radius: 9px;
 }
 .prod p:hover {
-  color: purple;
-  font-size: 1.9rem;
-  background-color: aliceblue;
-  border: 1.5px solid purple;
-  border-radius: 10px;
-  transition: 0.6s;
+  text-decoration-line: underline;
 }
 .logo {
   height: 50px;
-  margin: 4px 5px;
+  margin: 4px 4px;
+
+  border-radius: 40px;
 }
 
 .cartBox {
   margin-left: auto;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
 }
 
 .navbar a {
@@ -49,17 +43,17 @@
 }
 
 .btn {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   cursor: pointer;
   background: transparent;
   padding: 0.5rem 0.5rem;
   border: 2px solid whitesmoke;
   color: aliceblue;
+  border-radius: 20px;
 }
 .btn:hover {
   cursor: pointer;
   background-color: whitesmoke;
-  border: 2px solid purple;
   color: purple;
   transition: 0.6s;
 }
@@ -131,13 +125,14 @@
   background-color: rgb(238, 238, 231);
 
   border: 0.02rem solid rgb(170, 168, 168);
+  border-radius: 20px;
   box-shadow: 2px 2px 5px 0px gray;
   transition: all 1s linear;
 }
 .outCard:hover {
-  background-color: rgb(232, 232, 227);
+  background-color: rgb(231, 231, 226);
 
-  border: 0.04rem solid gray;
+  border: 0.04rem solid rgb(196, 191, 191);
   box-shadow: 4px 4px 5px 1px gray;
 }
 .cardFooter {
@@ -151,7 +146,7 @@
   margin-left: 30%;
 }
 .outCard:hover .cardFooter {
-  background: rgb(210, 212, 212);
+  background: rgb(236, 239, 239);
   border: none;
   border-radius: 12px;
 }
@@ -161,8 +156,12 @@
   margin: 2% 2%;
   transition: all 0.6s linear;
 }
+
 .img-container img {
-  height: 9rem;
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Use 'contain' to maintain aspect ratio while fitting within the container */
+  border-radius: 8px;
 }
 .outCard:hover .img-container {
   transform: scale(1.1);
