@@ -7,22 +7,24 @@ import Default from "./components/Default";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart/Cart";
 import Model from "./components/Model";
+import { ProductProvider, ProductConsumer } from "./Context";
+
 function App() {
   return (
-    <React.Fragment>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<ProductList />} />
-        <Route path="/details" element={<Details />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<Default />} />
-      </Routes>
-      <Model />
-      {/* <ProductList />
-      <Details />
-      <Cart />
-      <Default /> */}
-    </React.Fragment>
+    <ProductProvider>
+      <React.Fragment>
+        <ProductConsumer>
+          {(value) => <Navbar onSearch={value.setSearchQuery} />}
+        </ProductConsumer>
+        <Routes>
+          <Route path="/" element={<ProductList />} />
+          <Route path="/details" element={<Details />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<Default />} />
+        </Routes>
+        <Model />
+      </React.Fragment>
+    </ProductProvider>
   );
 }
 

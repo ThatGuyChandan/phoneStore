@@ -6,10 +6,12 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: blueviolet;
   padding: 2%;
   border-end-end-radius: 20px;
 }
+
 .navbar .prod {
   margin-left: 30px;
   align-self: center;
@@ -23,18 +25,28 @@
   font-size: 1.9rem;
   border-radius: 9px;
 }
-.prod p:hover {
-  text-decoration-line: underline;
-}
+
 .logo {
   height: 50px;
   margin: 4px 4px;
-
   border-radius: 40px;
 }
 
+.srchbar {
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.search-input {
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 2px solid whitesmoke;
+  font-size: 1.2rem;
+}
+
 .cartBox {
-  margin-left: auto;
+  margin-left: 30px;
   font-size: 2.1rem;
 }
 
@@ -51,19 +63,24 @@
   color: aliceblue;
   border-radius: 20px;
 }
+
 .btn:hover {
   cursor: pointer;
   background-color: whitesmoke;
   color: purple;
   transition: 0.6s;
 }
+
 .icon {
   margin: 5px 5px;
 }
+
 @media screen and (max-width: 470px) {
   .navbar {
     padding: 1%;
+    flex-wrap: wrap;
   }
+
   .navbar .prod {
     margin-left: 30px;
     align-self: center;
@@ -76,11 +93,22 @@
     font-size: 1.4rem;
     border-radius: 9px;
   }
+
   .prod p:hover {
     font-size: 1.6rem;
   }
+
   .logo {
     height: 45px;
+  }
+
+  .srchbar {
+    margin: 10px 0;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 200px;
   }
 
   .cartBox {
@@ -107,34 +135,37 @@
   text-align: center;
   margin: 2% 2%;
 }
+
 .head2 h1 {
   font-size: 2.5rem;
+  color: #333;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 1% 5%;
   padding-left: 10%;
 }
+
 .outCard {
-  flex: 0 0 calc(30.33% - 5px); /* Adjust the percentage based on your desired spacing */
-  /* You can also add margin or padding for spacing between items */
-  margin: 15px; /* Adjust this as needed */
+  flex: 0 0 calc(30.33% - 5px);
+  margin: 15px;
   box-sizing: border-box;
   padding: 4% 4%;
   background-color: rgb(238, 238, 231);
-
   border: 0.02rem solid rgb(170, 168, 168);
   border-radius: 20px;
   box-shadow: 2px 2px 5px 0px gray;
   transition: all 1s linear;
 }
+
 .outCard:hover {
   background-color: rgb(231, 231, 226);
-
   border: 0.04rem solid rgb(196, 191, 191);
   box-shadow: 4px 4px 5px 1px gray;
 }
+
 .cardFooter {
   background: transparent;
   border-top: transparent;
@@ -142,14 +173,18 @@
   display: flex;
   padding: 4% 4%;
 }
+
 .cardFooter h5 {
   margin-left: 30%;
+  color: #555; /* Slightly darker text color */
 }
+
 .outCard:hover .cardFooter {
   background: rgb(236, 239, 239);
   border: none;
   border-radius: 12px;
 }
+
 .img-container {
   position: relative;
   overflow: hidden;
@@ -160,12 +195,14 @@
 .img-container img {
   height: 100%;
   width: 100%;
-  object-fit: contain; /* Use 'contain' to maintain aspect ratio while fitting within the container */
+  object-fit: contain;
   border-radius: 8px;
 }
+
 .outCard:hover .img-container {
   transform: scale(1.1);
 }
+
 .addBtn {
   position: absolute;
   bottom: 0;
@@ -178,10 +215,12 @@
   border-radius: 0.9rem 0 0 0;
   transform: translate(100%, 100%);
 }
+
 .outCard:hover .addBtn {
   transform: translate(0, 0);
   transition: all 0.6s linear;
 }
+
 .addBtn:hover {
   color: blueviolet;
   background-color: rgb(204, 225, 225);
@@ -347,30 +386,44 @@
 /*add to cart*/
 .container3 {
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .model {
-  background-color: rgb(249, 239, 226);
-  padding: 2% 0%;
+  background-color: #f9f9f9;
+  padding: 20px;
   border: 2px solid gray;
   box-shadow: 2px 2px 2px 2px rgb(174, 100, 199);
+  text-align: center;
+  border-radius: 8px;
 }
+
 .container3 h5 {
-  padding: 2px 2px;
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 10px;
 }
+
 .container3 .btn1 {
   font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.container3 .btn1:hover {
+  background-color: #0056b3;
 }
 
 /* cart */
@@ -426,6 +479,7 @@
 .cBtn {
   padding: 1% 1%;
   color: purple;
+  cursor: pointer;
 }
 .cBtn:hover {
   background-color: rgb(147, 8, 147);
@@ -512,9 +566,18 @@
   }
 }
 .payBtn {
-  background-color: rgb(184, 184, 10);
+  background-color: rgb(164, 10, 184);
   border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.payBtn:hover {
+  background-color: rgb(123, 7, 137);
 }
 /* empty cart */
 .emptyCOntainer {

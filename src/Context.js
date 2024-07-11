@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { storeProducts, detailProduct } from "./data";
+
 const ProductContext = React.createContext();
+
 class ProductProvider extends Component {
   state = {
     products: [],
@@ -11,10 +13,13 @@ class ProductProvider extends Component {
     cartSubtotal: 0,
     cartTax: 0,
     cartTotal: 0,
+    searchQuery: "",
   };
+
   componentDidMount() {
     this.setProducts();
   }
+
   setProducts = () => {
     let tempProducts = [];
     storeProducts.forEach((item) => {
@@ -37,6 +42,7 @@ class ProductProvider extends Component {
       return { detailProduct: product };
     });
   };
+
   addToCart = (id) => {
     let tempProducts = [...this.state.products];
     const index = tempProducts.indexOf(this.getItem(id));
@@ -61,6 +67,7 @@ class ProductProvider extends Component {
       return { modalProduct: product, modalOpen: true };
     });
   };
+
   closeModel = () => {
     this.setState(() => {
       return { modalOpen: false };
@@ -84,6 +91,7 @@ class ProductProvider extends Component {
       }
     );
   };
+
   decrement = (id) => {
     let tempCart = [...this.state.cart];
     const selectedProduct = tempCart.find((item) => item.id === id);
@@ -105,6 +113,7 @@ class ProductProvider extends Component {
       );
     }
   };
+
   removeItem = (id) => {
     let tempProducts = [...this.state.products];
     let tempCart = [...this.state.cart];
@@ -121,7 +130,8 @@ class ProductProvider extends Component {
       };
     });
   };
-  clearCart = (id) => {
+
+  clearCart = () => {
     this.setState(
       () => {
         return { cart: [] };
@@ -132,6 +142,7 @@ class ProductProvider extends Component {
       }
     );
   };
+
   addTotal = () => {
     let subTotal = 0;
     this.state.cart.map((item) => (subTotal += item.total));
@@ -146,6 +157,11 @@ class ProductProvider extends Component {
       };
     });
   };
+
+  setSearchQuery = (query) => {
+    this.setState({ searchQuery: query });
+  };
+
   render() {
     return (
       <ProductContext.Provider
@@ -159,6 +175,7 @@ class ProductProvider extends Component {
           decrement: this.decrement,
           removeItem: this.removeItem,
           clearCart: this.clearCart,
+          setSearchQuery: this.setSearchQuery,
         }}
       >
         {this.props.children}
@@ -166,6 +183,7 @@ class ProductProvider extends Component {
     );
   }
 }
+
 const ProductConsumer = ProductContext.Consumer;
 
 export { ProductConsumer, ProductProvider };
