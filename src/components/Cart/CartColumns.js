@@ -1,28 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import TableCell from '@mui/material/TableCell';
 
-export default class CartColumns extends Component {
-  render() {
-    return (
-      <div className="container4">
-        <div className="row4">
-          <p>Products</p>
-        </div>
-        <div className="row4">
-          <p>Name of product</p>
-        </div>
-        <div className="row4">
-          <p>Price</p>
-        </div>
-        <div className="row4">
-          <p>Quantity</p>
-        </div>
-        <div className="row4">
-          <p>Remove</p>
-        </div>
-        <div className="row4">
-          <p>Total</p>
-        </div>
-      </div>
-    );
-  }
+export default function CartColumns() {
+  return (
+    <TableHead>
+      <TableRow>
+        <TableCell sx={{ fontWeight: 700, fontSize: 18 }}>Products</TableCell>
+        <TableCell sx={{ fontWeight: 700, fontSize: 18 }}>Name of product</TableCell>
+        <TableCell sx={{ fontWeight: 700, fontSize: 18 }}>Price</TableCell>
+        <TableCell sx={{ fontWeight: 700, fontSize: 18 }}>Quantity</TableCell>
+        <TableCell sx={{ fontWeight: 700, fontSize: 18 }}>Remove</TableCell>
+        <TableCell sx={{ fontWeight: 700, fontSize: 18 }}>Total</TableCell>
+      </TableRow>
+    </TableHead>
+  );
 }
