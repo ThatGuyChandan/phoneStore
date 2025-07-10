@@ -39,16 +39,8 @@ A modern, professional e-commerce web app built with React and Material-UI (MUI)
 - Toggle dark/light mode from the navbar.
 - The payment section is a demo—no real payment is processed.
 
-## Screenshots
-
-> _Add screenshots here after running the app!_
 
 ---
 
 ## Customization & Extending
 - Easily connect to a backend or add AI features (recommendations, chatbots, etc.)
-- Swap out images and branding for your own store
-
----
-
-**Made with ❤️ for modern web portfolios and demos.**
