@@ -60,4 +60,3 @@ A modern, professional e-commerce web app built with React and Material-UI (MUI)
 
 ---
 
-**Made with ❤️ for modern web portfolios and demos.**

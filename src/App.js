@@ -20,43 +20,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#1e293b', // Deep blue
-      contrastText: '#fff',
-    },
-    secondary: {
-      main: '#06b6d4', // Vibrant teal
-      contrastText: '#fff',
-    },
-    background: {
-      default: '#f8fafc', // Soft gray
-      paper: '#fff',
-    },
-  },
-  typography: {
-    fontFamily: 'Poppins, Inter, Roboto, "Helvetica Neue", Arial, sans-serif',
-    h1: { fontWeight: 700 },
-    h2: { fontWeight: 600 },
-    h5: { fontWeight: 500 },
-    button: { fontWeight: 600, textTransform: 'none', letterSpacing: 1 },
-  },
-  shape: {
-    borderRadius: 16,
-  },
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: 12,
-          boxShadow: '0 2px 8px rgba(6,182,212,0.08)',
-        },
-      },
-    },
-  },
-});
-
 function App() {
   // Dark/Light mode state
   const [mode, setMode] = useState(() => {

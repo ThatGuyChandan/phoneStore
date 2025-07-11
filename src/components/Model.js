@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { ProductConsumer } from "../Context";
 import { Link } from "react-router-dom";
 import Dialog from '@mui/material/Dialog';
