@@ -51,10 +51,6 @@ A modern, professional e-commerce web app built with React and Material-UI (MUI)
 - The payment section is a demo—no real payment is processed.
 - Chat with support using the Tidio widget in the bottom right corner.
 
-## Screenshots
-
-> _Add screenshots here after running the app!_
-
 ---
 
 ## Customization & Extending
