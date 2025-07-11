@@ -15,11 +15,22 @@ A modern, professional e-commerce web app built with React and Material-UI (MUI)
   - Animated, gradient "Pay Now" button (demo only)
   - Payment success animation
 - **Accessibility**: Theme-aware colors, keyboard navigation, and mobile-friendly
+- **Google Analytics Integration**: Track user visits and engagement
+- **Tidio Live Chat Integration**: Real-time customer support/chat widget
+- **SEO-Ready**: Semantic HTML, meta tags, and fast performance
+- **Easy Customization**: Swap out images, colors, and branding for your own store
+
+## Integrations
+
+- **Google Analytics**: Integrated for real-time traffic and user behavior tracking. Easily monitor your site's performance and user engagement.
+- **Tidio Live Chat**: Third-party chat widget for instant customer support and engagement. Users can chat with support directly from any page.
 
 ## Tech Stack
 - **Frontend**: React, Material-UI (MUI v5)
 - **State Management**: React Context API
 - **Routing**: React Router
+- **Analytics**: Google Analytics (gtag.js)
+- **Chat**: Tidio Live Chat
 
 ## Getting Started
 
@@ -38,6 +49,7 @@ A modern, professional e-commerce web app built with React and Material-UI (MUI)
 - Browse products, add to cart, and experience a premium checkout flow.
 - Toggle dark/light mode from the navbar.
 - The payment section is a demo—no real payment is processed.
+- Chat with support using the Tidio widget in the bottom right corner.
 
 ## Screenshots
 
@@ -48,6 +60,7 @@ A modern, professional e-commerce web app built with React and Material-UI (MUI)
 ## Customization & Extending
 - Easily connect to a backend or add AI features (recommendations, chatbots, etc.)
 - Swap out images and branding for your own store
+- Integrate additional analytics or chat services as needed
 
 ---
 
