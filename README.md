@@ -58,6 +58,4 @@ A modern, professional e-commerce web app built with React and Material-UI (MUI)
 - Swap out images and branding for your own store
 - Integrate additional analytics or chat services as needed
 
----
 
-**Made with ❤️ for modern web portfolios and demos.**
