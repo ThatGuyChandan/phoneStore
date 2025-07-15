@@ -58,4 +58,27 @@ A modern, professional e-commerce web app built with React and Material-UI (MUI)
 - Swap out images and branding for your own store
 - Integrate additional analytics or chat services as needed
 
+---
+
+## Docker Containerization
+
+You can run this app in a production-ready Docker container using Nginx.
+
+### Build the Docker Image
+```sh
+docker build -t store .
+```
+
+### Run the Docker Container
+```sh
+docker run -p 80:80 store
+```
+
+Then open [http://localhost](http://localhost) in your browser.
+
+- The Dockerfile uses multi-stage builds for optimized image size.
+- Static files are served via Nginx for best performance.
+
+---
+
 

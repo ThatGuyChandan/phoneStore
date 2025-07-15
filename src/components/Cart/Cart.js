@@ -29,7 +29,6 @@ export default class Cart extends Component {
                     <Grid container spacing={4} justifyContent="center">
                       <Grid item xs={12} md={8} sx={{ mx: 'auto' }}>
                         <Typography variant="h5" sx={{ fontWeight: 800, mb: 2, letterSpacing: 1, textAlign: 'center' }}>Order Summary</Typography>
-                        <CartColumns />
                         <Divider sx={{ my: 2 }} />
                         <CartList value={value} />
                       </Grid>
